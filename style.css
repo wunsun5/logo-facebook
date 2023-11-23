@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.facebook{
+    position: relative;
+    width: 30em;
+    height: 30em;
+    background-color: #1877f2;
+    border-radius: 1.5em;
+    box-shadow: -.5em .5em 40px 0 rgba(0, 0, 0, .5);
+}
+
+.line{
+    position: absolute;
+    width: 5em;
+    height: 15em;
+    background-color: white;
+    bottom: 0;
+    left: 54%;
+}
+
+.line::before{
+    content: '';
+    position: absolute;
+    width: 13em;
+    border-right: .6em solid transparent;
+    border-top: 5em solid white;
+    border-radius: .1em;
+    left: -82%;
+}
+
+.line::after{
+    content: '';
+    position: absolute;
+    width: 9.4em;
+    height: 10em;
+    background-color: white;
+    border-radius: 5.1em .5em 0 0;
+    top: -63%;
+}
+
+.facebook::before{
+    content: '';
+    position: absolute;
+    width: 4.4em;
+    height: 4.8em;
+    border-radius: 1.5em 0 0 0;
+    background-color: #1877f2;
+    right: 4.4em;
+    top: 10.2em;
+    z-index: 99;
+}
+
+img[alt="www.000webhost.com"]{
+    display: none !important;
+}
